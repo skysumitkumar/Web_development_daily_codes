@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: brown;
+    border:3px solid black;
+    height:500px;
+    /* to on grid */
+    display:grid;
+    /* to make columns */
+    /* grid-template-columns: 200px 200px 200px; */
+    /* to devide columns in equal size to make flexible grid*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns:repeate(3,1fr);*/
+    /* to make rows */
+    grid-template-rows: 90px 90px 90px 90px;
+    /* to make gap in grid */
+    gap:50px; 
+}
+.box{
+    background-color: aqua;
+    border:3px solid black;
+    /* width:80px; */
+    height:80px;
+}
+#box1{
+    /* to colspan */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#box3{
+    /* to rowspan */
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* grid area
+grid column
+gird row */

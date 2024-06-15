@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    /* taki border or padding add karne par content ka size small ho jaae par box size small na ho */
+    box-sizing:border-box;
+}
+.wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    /* pure view port ki height jitne */
+    height:100%;
+    max-width:1200px;
+    /* left side or right side margin so content is at center */
+    margin:0 auto;
+    /* border or content ke bich ka space */
+    padding:20px;
+}
+.container h1{
+    margin:20px 0;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:3rem;
+}
+.gallery{
+    /* its default main axis value is horizontal */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.card{
+    width:32%;
+    position:relative;
+    /* to take overlap text in image where nearest ancestor is non static
+    jisko hame overlap karvana h uska parent nonstatic ya relative hona chyea */
+    margin-bottom:20px;
+    /* to round image corners */
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.card img{
+    height:100%;
+    width:100%;
+    /* to filter grayscale */
+    filter:grayscale(100%);
+    /* shadow */
+    box-shadow:0 0 20px #333;
+    object-fit:cover;
+}
+.card:hover{
+    /* when we hover than card size is big */
+    transform:scale(1.03);
+    filter:drop-shadow(0 0 10px #333);
+    /* to speed the effect */
+    transition:0.3s;
+}
+.card:hover img{
+    /* when we hover than grayscale effect is 0 */
+    filter:grayscale(0%);
+}
+.card:hover figcaption{
+    /* to overflow text on image */
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding:25px;
+    width:100%;
+    height:20%;
+    font-size:16px;
+    font-weight:500;
+    color:#fff;
+    /* to hide text */
+    opacity:0;
+    border-radius: 0 0 10px 10px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5) 0%,rgba(255,255,255,0) 100%);
+    transition:0.3s;
+}
+.card:hover figcaption{
+    opacity:1;
+    transform:scale(1.03); 
+}
