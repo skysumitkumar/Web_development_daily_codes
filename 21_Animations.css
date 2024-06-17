@@ -1,0 +1,99 @@
+/* to declare globaly we use :root */
+:root{
+    --dark-red:#981a2c;
+}
+.container{
+    border:1px solid brown;
+    background-color: green;
+    height:300px;
+    width:300px;
+    background-color: var(--dark-red);
+}
+.box{
+    border:2px solid green;
+    background-color: orange;
+    /* for variable we have to use -- at the first of the name of the variable here we use local variable if we want globaly we use root */
+    --dark-red:#981a2c;
+    color:var(--dard-red);
+}
+.container1{
+    height:500px;
+    width:500px;
+    background-color: green;
+    border:3px solid red;
+    display:flex;
+}
+.box1{
+    height:150px;
+    width:150px;
+    margin:20px;
+    border:1px solid orange;
+    background-color: aqua;
+    /* transition to smooth change */
+    /* transition: 2s; */
+
+    /* or we also use this */
+    /* transition-property: background-color; */
+
+    /* sort hand transition:-kispar ,duration ,transition timing function ,transiton delay */
+    /* transition: transform 1s ease 1s; */
+
+    /* transition: transform 1s ease-in 1s; */
+
+    /* transition: transform 1s cubic-bezier(1,-0.09,0,1.69); */
+
+    transition:  1s cubic-bezier(1,-0.09,0,1.69);
+}   
+.box1:hover{
+    /* background-color: brown; */
+    /* transform:rotate(45deg); */
+
+    transform:translate(300px) rotate(360deg);
+}
+.container2{
+    width:100%;
+    height:215px;
+    background-color: yellow;
+    border:2px solid red;
+    
+}
+.box2{
+    border:2px solid green;
+    background-color:aqua;
+    width:212px;
+    height:212px;
+
+    animation-name: sumit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    /* animation-direction:alternate; */
+    animation-fill-mode:backword;
+}
+
+/* to animation starting and ending state we use keyframes */
+/* @keyframes sumit{
+    from{
+        width:212px;
+    }
+    to{
+        width:100%;
+    }
+} */
+
+@keyframes sumit{
+    0%{
+        width:212px;
+        background-color: white;
+    }
+    50%{
+        width:212px;
+        background-color: orange;
+    }
+    100%{
+        width:212px;
+        background-color: green;
+    }
+    
+}
