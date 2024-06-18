@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="23_portfolio_website.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+             <div class="navbar">
+                <div class="logo-container">
+                    <img src="./img/userAsset/s_logo.jpg" class="logo">
+                    <div class="logo-text">umit kumar</div>
+                </div>
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+             </div>
+             <div class="hero-section">
+                <div class="faded-text">Sumit kumar</div>
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Hi! Sumit kumar</div>
+                    <div class="hero-section-sub-heading">I am a <span class="role"></span></div>
+                    <div class="hero-section-description">
+                        I'm a software developer and here is my portfolio website. Here you'll 
+                        learn about my journey as a software developer.
+                    </div>
+                    <div class="btn-pink btn btn-bottom">Hire me</div>
+                </div>
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="./img/userAsset/dots.png" alt=""/>
+                    </div>
+                    <div class="absolute icons icon-cube">
+                        <img src="./img/userAsset/cube.png" alt=""/>
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <img src="./img/userAsset/circle.png" alt=""/>
+                    </div>
+                    <div class="absolute icons icon-zig-zag">
+                        <img src="./img/userAsset/zigzags.png" alt=""/>
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="./img/userAsset/plus.png" alt=""/>
+                    </div>
+                    <div class="user-image">
+                        <img src="./img/userAsset/UserImage1.png" alt=""/>
+                    </div>
+                </div>
+             </div>
+             <div class="project-section">
+                <h2 class="page-header">Projects</h2>
+                <div class="project-container">
+                    <div class="project-card project1">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <div class="project-skills-container">
+                                <img src="./img/stack/HTML.png" alt="" class="project-skill"/>
+                                <img src="./img/stack/CSS.png" alt="" class="project-skill"/>
+                                <img src="./img/stack/Javascript.svg" alt="" class="project-skill"/>
+                                <img src="./img/stack/Express.png" alt="" class="project-skill"/>
+                                <img src="./img/stack/NextJsCircle.png" alt="" class="project-skill"/>
+                                <img src="./img/stack/Tailwind.png" alt="" class="project-skill"/>
+                                <img src="./img/stack/NodeJs.svg" alt="" class="project-skill"/>
+                                <img src="./img/stack/MongoDB.svg" alt="" class="project-skill"/>
+                                <img src="./img/stack/Redux.svg" alt="" class="project-skill"/>
+                                <img src="./img/stack/Vercel.svg" alt="" class="project-skill"/>
+                            </div>
+                            <h2 class="project-heading">Tint & Orange</h2>
+                            <div class="project-subHeading">It is a car mofification company which provide you sheets to protect your car from scratch</div>
+                            <div class="btn-grp">
+                                <button class="btn-pink btn-project">Read More</button>
+                                <a href="">
+                                    <i title="GitHubLink" class="fa-brads fa-github icon"></i>
+                                </a>
+                                <a href="">
+                                    <i title="Live Link" class="fa-solid fa-link icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-- to text write and change on everytime -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData=new Typed(".role",{
+            strings:[
+                "Full Stack Developer",
+                "Web Developer",
+                "Backend Developer",
+                "Coder",
+                "Hacker",
+            ],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1000,
+        });
+    </script>
+</body>
+</html>
