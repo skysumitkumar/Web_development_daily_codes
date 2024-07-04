@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily:{
         mullish:["Mulish","sans-serif"],
+        Whitney:["Whitney"],
+        Ginto:["Ginto"],
+        ggSans:["ggSans"],
       },
       colors:{
         deepBlue:"#02042a",
@@ -21,4 +24,5 @@ module.exports = {
     },
   },
   plugins: [],
+
 }
