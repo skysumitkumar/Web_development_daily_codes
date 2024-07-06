@@ -95,14 +95,46 @@
 
 /* ----------------------   39_React_Basics    ------------------------------------- */
 
+// //import files to use them
+// import "./App.css";
+// import NewProduct from "./components/NewProduct";
+// import Item from './components/React_Basic';
+// function App() {
+//   return (
+//     <div>
+//     <NewProduct/>
+//     <Item name="sumit"></Item>
+//     <div className="App">Hello Jee</div>
+//     </div>
+//   );
+// }
+// // we have to export it to use in index.js
+// export default App;
+
+// parent can communicate child with props but how child can communicate with parent
+// so to do this we make a function on parent and pass it to the child then child call that function we 
+//parameter object then parent access that function and these communicate
+// make sure when give name to prop that handel event so it started from on
 //import files to use them
 import "./App.css";
+import NewProduct from "./components/NewProduct";
 import Item from './components/React_Basic';
 function App() {
+  // here we make that function
+  function printProductData(data){
+    console.log("i am inside App.js")
+    console.log(data)
+  }
   return (
-    <div><div className="App">Hello Jee</div>
+    <div>
+    {/* here we pass that function with props*/}
+    <NewProduct printProduct={printProductData}/>
+    <Item name="sumit"></Item>
+    <div className="App">Hello Jee</div>
     </div>
   );
 }
 // we have to export it to use in index.js
 export default App;
+
+/* ----------------------   40_React_Basics    ------------------------------------- */
