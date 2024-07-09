@@ -177,20 +177,31 @@
 // t.forEach(no=>console.log(no));
 
 
-//Mapping Arrays
-let a=[7,8,9,10];
-let items=a.map(function(value){
-    return 'student_no'+value;
-})
-console.log(items);
-// mapping with object
-let b=[1,2,-6,-9];
-let filtered=b.filter(value=>value>=0);
-let c=filtered.map(function(num){
-    return {value:num};
-})
-console.log(c);
-// chaining
-let d=[1,2,-6,-9];
-let e=d.filter(value=>value<=0).map(num=>({value:num}));
-console.log(e);
+// //Mapping Arrays
+// let a=[7,8,9,10];
+// let items=a.map(function(value){
+//     return 'student_no'+value;
+// })
+// console.log(items);
+// // mapping with object
+// let b=[1,2,-6,-9];
+// let filtered=b.filter(value=>value>=0);
+// let c=filtered.map(function(num){
+//     return {value:num};
+// })
+// console.log(c);
+// // chaining
+// let d=[1,2,-6,-9];
+// let e=d.filter(value=>value<=0).map(num=>({value:num}));
+// console.log(e);
+
+
+// reduce Method:-to reduce the array
+let arr=[1,2,5,8,8,5,2,6,3];
+let total=0;
+//0 is initialized value of accumulator
+// if we not write 0 there so accumulator is by default initialized with first value and currentValue is start with second value
+let totalSum=arr.reduce((accumulator,currentValue)=>accumulator+currentValue,0);
+let totalSum1=arr.reduce((accumulator,currentValue)=>accumulator+currentValue);
+console.log("total sum is ",totalSum);
+console.log("total sum1 is ",totalSum1);

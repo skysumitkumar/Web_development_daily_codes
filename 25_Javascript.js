@@ -18,6 +18,17 @@
 // var b=7;
 // console.log(b);
 
+// //scope
+// // let:-local
+// // var:-global
+// {
+//     let a=9;
+//     var b=5;
+// }
+// console.log(a);//error
+// console.log(b);//print 5
+
+
 // const num=12;
 // num=90;
 // console.log(num);
