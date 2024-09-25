@@ -21,6 +21,7 @@
 // //scope
 // // let:-local
 // // var:-global
+// //if(1)
 // {
 //     let a=9;
 //     var b=5;
@@ -33,10 +34,10 @@
 // num=90;
 // console.log(num);
 
-// while making variate always use camel case: sumitKumar
+// while making variable always use camel case: sumitKumar
 
 // Primitive Types
-//String,number,boolean,undefined,null
+// String,number,boolean,undefined,null
 
 // // dynamic Type
 // let lastName="kumar";
@@ -50,7 +51,7 @@
 
 // Equality Operator
 // Loose equality:-value of both no have same
-// Strict Equality:-value and data type of both no have same
+// Strict Equality:-value and data type of both no have same(===)
 
 //Ternary Operator(conditional operator)
 //a>b?console.log("a is greater"):console.log("b is greater");
@@ -59,7 +60,7 @@
 //falsey values:-undefined,null,0,false,not a no(NaN),''
 //truthy values:-not a falsey value
 // it print sumit on or case in case of and it print false
-// it called sort curcit
+// it called sort circuit
 //false||"sumit"
 console.log("hello");
 
